@@ -1,0 +1,103 @@
+body {
+    background: url(../images/back.jpg);
+}
+
+.hard {
+    background: #f7ecd2;
+}
+
+.delo_page {
+    background: #d2d6df;
+    .page {
+        position: relative;
+        
+        .page__number {
+            position: absolute;
+           font-family: 'Open Sans Condensed', sans-serif;
+          top: 560px;
+         left: 206px;
+        }
+        .clip{
+            position: absolute;
+    top: -11px;
+    left: 35px;
+    width: 5%;
+    z-index: 9; 
+        }
+        .img_planet {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            width: 150px;
+            height: 150px; 
+    -moz-transform: rotate(15deg); /* Для Firefox */
+    -ms-transform: rotate(15deg); /* Для IE */
+    -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(15deg); /* Для Opera */
+    transform: rotate(15deg);
+        }
+        .page__title {
+            font-family: 'Open Sans Condensed', sans-serif;
+            position: absolute;
+            top: 10px;
+            left: 260px;
+        }
+        .page_text-info {
+            font-family: 'Open Sans Condensed', sans-serif;
+            position: absolute;
+            left: 160px;
+            top: 100px;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        .page__text {
+            font-family: 'Roboto Slab', serif;
+            position: absolute;    
+            left: 10px;
+            top: 361px;
+            padding: 10px;
+            text-align: justify;
+        }
+    }
+}
+
+.cover {
+    position: relative;
+    .line {
+        font-family: 'Roboto Slab', serif;
+        margin: 10px;
+        border: 1px solid #000;
+        width: 480px;
+        height: 580px;
+        .delo__poloski-up {
+            position: absolute;
+            top: 12px;
+            right: 25px;
+            // text-decoration: underline;
+        }
+        .delo__title {
+            font-family: 'Roboto Slab', serif;
+            position: absolute;
+            top: 150px;
+            left: 140px;
+            font-size: 40px;
+            span {}
+            .delo__number {
+                // text-decoration: underline;
+            }
+        }
+        .delo__poloski-dw {
+            font-family: 'Roboto Slab', serif;
+            position: absolute;
+            top: 200px;
+            left: 140px;
+            // text-decoration: underline;
+        }
+        .delp__year {
+            font-family: 'Roboto Slab', serif;
+            position: absolute;
+            top: 500px;
+            left: 140px;
+        }
+    }
+}
