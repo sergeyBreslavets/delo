@@ -17,7 +17,7 @@ var sass           = require('gulp-sass');
 var jade           = require('gulp-jade');
 var notify         = require("gulp-notify");
 //src file
-var imgSrc         = './src/images/**/*';
+var imgSrc         = ['./src/images/*','./src/images/*/*'];
 var sourcesjs      =  [     
                            'bower_components/modernizr/modernizr.js',
                            'bower_components/jquery/dist/jquery.js',
@@ -234,7 +234,7 @@ gulp.task('watch', ['imagemin', 'sass', 'htmlpage',  'scripts', /*'styles',  'im
     gulp.watch('./src/sass/{,*/}*.{scss,sass}', function() {
         gulp.run('sass');
     });
-    gulp.watch('./src/images/*', function() {
+    gulp.watch('./src/images/{,*/}*.{jpg,png}', function() {
         gulp.run('imagemin');
     });
 
