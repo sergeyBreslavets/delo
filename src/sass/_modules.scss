@@ -1,9 +1,19 @@
 body {
     background: url(../images/back.jpg);
 }
-
+.title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
 .hard {
-    background: #f7ecd2;
+    background: #f7ecd2 !important ;
+}
+
+.sun{
+  
+  top: 170px !important;
+  font-size: 12px;
 }
 
 .delo_page {
